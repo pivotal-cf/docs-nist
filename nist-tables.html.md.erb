@@ -2,6 +2,8 @@
 title: Developer Guide
 ---
 
+
+
 <style>
 .tab {
     overflow: hidden;
@@ -39,7 +41,7 @@ title: Developer Guide
 }
 </style>
 <script>
-function openCity(evt, cityName) {
+function openDocs(evt, docsName) {
     // Declare all variables
     var i, tabcontent, tablinks;
     // Get all elements with class="tabcontent" and hide them
@@ -53,28 +55,45 @@ function openCity(evt, cityName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(docsName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 </script>
 
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openDocs(event, 'tab1')">TAB1-NAME</button>
+  <button class="tablinks" onclick="openDocs(event, 'tab2')">TAB2-NAME</button>
 </div>
 
 <!-- Tab content -->
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="tab1" class="tabcontent">
+  <h3>TABLE HEADER</h3>
+  <table>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
 </div>
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="tab2" class="tabcontent">
+  <h3>TABLE HEADER</h3>
+  <table>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
 </div>
