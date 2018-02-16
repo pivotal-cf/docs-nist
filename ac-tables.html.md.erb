@@ -1,0 +1,1001 @@
+---
+title: Control Family&#58; AC - Access Control
+owner: Security
+---
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-1 ACCESS CONTROL POLICY AND PROCEDURES<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol type="a">
+        <li>Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:</li>
+		  <ol>
+          <li>An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</li>
+          <li>Procedures to facilitate the implementation of the access control policy and associated access controls; and</li>
+        </ol>
+        <li>Reviews and updates the current:</li>
+        <ol>
+          <li>Access control policy [Assignment: organization-defined frequency]; and</li>
+          <li>Access control procedures [Assignment: organization-defined frequency].</li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>PCF features satisfy AC-1. PCF inherits these requirements from the administrator.
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>All dash-1 requirements are the administrator's responsibility. Pivotal may be able to provide guidance to customers who are creating or updating documentation, but this documentation is unique to your business goals.
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-1(a) ACCESS CONTROL POLICY AND PROCEDURES<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol type="a">
+        <li>Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:</li>
+		  <ol>
+          <li>An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</li>
+          <li>Procedures to facilitate the implementation of the access control policy and associated access controls; and</li>
+        </ol>
+        <li>Reviews and updates the current:</li>
+        <ol>
+          <li>Access control policy [Assignment: organization-defined frequency]; and</li>
+          <li>Access control procedures [Assignment: organization-defined frequency].</li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>PCF features satisfy AC-1(a). PCF provides the user roles capability.
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>You must map PCF roles to staff business functions. For more information, see <a href="https://docs.pivotal.io/pivotalcf/concepts/roles.html">Orgs, Spaces, Roles, and Permissions</a> and <a href="https://docs.pivotal.io/pivotalcf/customizing/opsman-users.html">Creating and Managing Ops Manager User Accounts</a>.
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-2 ACCOUNT MANAGEMENT<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li>Identifies and selects the following types of information system accounts to support organizational missions/business functions: [Assignment: organization-defined information system account types];</li>
+        <li>Assigns account managers for information system accounts;</li>
+        <li>Establishes conditions for group and role membership;</li>
+        <li>Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;</li>
+        <li>Requires approvals by [Assignment: organization-defined personnel or roles] for requests to create information system accounts;</li>
+        <li>Creates, enables, modifies, disables, and removes information system accounts in accordance with [Assignment: organization-defined procedures or conditions];</li>
+        <li>Monitors the use of information system accounts;</li>
+        <li>Notifies account managers:</li>
+		  <ol>
+          <li>When accounts are no longer required;</li>
+          <li>When users are terminated or transferred; and</li>
+          <li>When individual information system usage or need-to-know changes;</li>
+        </ol>
+        <li>Authorizes access to the information system based on:</li>
+		  <ol>
+          <li>A valid access authorization;</li>
+          <li>Intended system usage; and</li>
+          <li>Other attributes as required by the organization or associated missions/business functions;</li>
+        </ol>
+        <li>Reviews accounts for compliance with account management requirements [Assignment: organization-defined frequency]; and</li>
+        <li>Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.</li>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>PCF features satisfy AC-2.
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>Policy and procedures are the administrator's responsibility. APIs are available to enable automation and reporting for account management.
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-3 ACCESS ENFORCEMENT<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The information system enforces approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-4 INFORMATION FLOW ENFORCEMENT<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The information system enforces approved authorizations for controlling the flow of information within the system and between interconnected systems based on [Assignment: organization-defined information flow control policies].
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-5 SEPARATION OF DUTIES<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li>Separates [Assignment: organization-defined duties of individuals];</li>
+        <li>Documents separation of duties of individuals; and</li>
+        <li>Defines information system access authorizations to support separation of duties.</li>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-6 LEAST PRIVILEGE<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization employs the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) which are necessary to accomplish assigned tasks in accordance with organizational missions and business functions.
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-7 UNSUCCESSFUL LOGON ATTEMPTS<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The information system:
+      <ol>
+        <li>Enforces a limit of [Assignment: organization-defined number] consecutive invalid logon attempts by a user during a [Assignment: organization-defined time period]; and</li>
+        <li>Automatically [Selection: locks the account/node for an [Assignment: organization-defined time period]; locks the account/node until released by an administrator; delays next logon prompt according to [Assignment: organization-defined delay algorithm]] when the maximum number of unsuccessful attempts is exceeded.</li>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-8 SYSTEM USE NOTIFICATION<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The information system:
+      <ol>
+        <li>Displays to users [Assignment: organization-defined system use notification message or banner] before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance and states that:</li>
+		  <ol>
+          <li>Users are accessing a U.S. Government information system;</li>
+          <li>Information system usage may be monitored, recorded, and subject to audit;</li>
+          <li>Unauthorized use of the information system is prohibited and subject to criminal and civil penalties; and</li>
+          <li>Use of the information system indicates consent to monitoring and recording;</li>
+        </ol>
+        <li>Retains the notification message or banner on the screen until users acknowledge the usage conditions and take explicit actions to log on to or further access the information system; and</li>
+        <li>For publicly accessible systems:</li>
+		  <ol>
+          <li>Displays system use information [Assignment: organization-defined conditions], before granting further access;</li>
+          <li>Displays references, if any, to monitoring, recording, or auditing that are consistent with privacy accommodations for such systems that generally prohibit those activities; and</li>
+          <li>Includes a description of the authorized uses of the system.</li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-9 PREVIOUS LOGON (ACCESS) NOTIFICATION<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The information system notifies the user, upon successful logon (access) to the system, of the date and time of the last logon (access).        <li></li>
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-10 CONCURRENT SESSION CONTROL<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The information system limits the number of concurrent sessions for each [Assignment: organization-defined account and/or account type] to [Assignment: organization-defined number].
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><br>AC-? NAME<br><br></th>
+  </tr>
+  <tr>
+    <th width="25%">Description</th>
+    <td>The organization:
+      <ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+        <li></li>
+		  <ol>
+          <li></li>
+          <li></li>
+        </ol>
+      </ol>					 
+    </td>
+  </tr>
+  <tr>
+    <th width="25%">PCF Compliance</th>
+    <td>
+    </td>
+  </tr>
+    <th width="25%">Details</th>
+    <td>
+    </td>
+  </tr>
+</table>
+
