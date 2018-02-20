@@ -1,0 +1,17 @@
+---
+title: SI-10 INFORMATION INPUT VALIDATION
+owner: Security
+---
+
+Checking the valid syntax and semantics of information system inputs (e.g., character set, length, numerical range, and acceptable values) verifies that inputs match specified definitions for format and content. Software applications typically follow well-defined protocols that use structured messages (i.e., commands or queries) to communicate between software modules or system components. Structured messages can contain raw or unstructured data interspersed with metadata or control information. If software applications use attacker-supplied inputs to construct structured messages without properly encoding such messages, then the attacker could insert malicious commands or special characters that can cause the data to be interpreted as control information or metadata. Consequently, the module or component that receives the tainted output will perform the wrong operations or otherwise interpret the data incorrectly. Prescreening inputs prior to passing to interpreters prevents the content from being unintentionally interpreted as commands. Input validation helps to ensure accurate and correct inputs and prevent attacks such as cross-site scripting and a variety of injection attacks.
+
+##<a id='description'></a>Control Description
+
+The information system checks the validity of [Assignment: organization-defined information inputs].
+
+##<a id='compliance'></a>PCF Compliance
+
+
+##<a id='details'></a>Details
+
+
