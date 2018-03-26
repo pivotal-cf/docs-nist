@@ -5,7 +5,11 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
+Inherited
+
 ##<a id='details'></a>Details
+
+PCF uses OAuth2 tokens with session timeout.  No concept of maintaining a locked session is present in PCF.  However, the control is inherited via the client desktop.  All desktop/laptop/tablet clients will have a screen lock provided.  Enforcing the use of this session lock at the client device is the responsibility of the deployer.  Note that this is P3, so not a high priority for the compliant organization.
 
 <hr>
 
