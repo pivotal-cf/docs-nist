@@ -3,13 +3,13 @@ title: AC-11 SESSION LOCK
 owner: Security
 ---
 
-##<a id='compliance'></a>PCF Compliance
+##<a id='compliance'></a>PCF Compliance 
 
-Inherited
+This control is inherited from the client desktop.  All desktop, laptop, and tablet clients have a screen lock provided.  Enforcing the use of this session lock at the client device is the responsibility of the deployer. 
 
-##<a id='details'></a>Details
+PCF uses OAuth2 tokens with session timeout, but does not maintain locked sessions.
 
-PCF uses OAuth2 tokens with session timeout.  No concept of maintaining a locked session is present in PCF.  However, the control is inherited via the client desktop.  All desktop/laptop/tablet clients will have a screen lock provided.  Enforcing the use of this session lock at the client device is the responsibility of the deployer.  Note that this is P3, so not a high priority for the compliant organization.
+<p class="note"><strong>Note</strong>: This control is P3, which is a lower level of priority for the compliant organization</p> .
 
 <hr>
 
