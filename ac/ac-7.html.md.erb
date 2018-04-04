@@ -5,7 +5,7 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-In PCF, the UAA component delegates these responsibilities to the enterprise identity managment system. In the case of BOSH SSH, users must use a private key. 
+In PCF, the UAA component delegates these responsibilities to the enterprise identity managment systemi (IdM). Lockout of users following too many failed authentication attempts is inherited from the enterprise IdM. In the case of BOSH SSH, users must have previously authenticated via UAA, and the SSH login uses a BOSH-managed private key.
 <hr>
 
 ##<a id='description'></a>Control Description
@@ -15,7 +15,7 @@ The information system:
 <ol type="a">
   <li>Enforces a limit of [Assignment: organization-defined number] consecutive invalid logon attempts by a user during a [Assignment: organization-defined time period]; and</li>
   <li>Automatically [Selection: locks the account/node for an [Assignment: organization-defined time period]; locks the account/node until released by an administrator; delays next logon prompt according to [Assignment: organization-defined delay algorithm]] when the maximum number of unsuccessful attempts is exceeded.</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 
