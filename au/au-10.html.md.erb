@@ -5,11 +5,10 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-Not supported.
-
-##<a id='details'></a>Details
-
-This is not required for FISMA moderate.
+Audit log integrity is supported through logical access controls within the PAS itself, and via the controls in the underlying cloud infrastructure.
+Within the PCF platform, there are no native provisions to support cryptographic non-repudiation of audit log records using, e.g. a digital signature.
+However, this non-repudiation control will be inherited by PCF when it is provided by the enterprise log management system.
+This control is not required for compliance at the FISMA moderate level.
 
 <hr>
 

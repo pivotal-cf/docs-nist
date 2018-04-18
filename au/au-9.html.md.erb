@@ -5,7 +5,12 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-inherited
+PCF satisfies all of the implied technical control requirements. The organization's procedural controls will be inherited by the PCF deployment.
+PCF may be configured to protect audit data using TLS as it is transfered from the PCF environment to the enterprise log management system.
+PCF provides native controls for limiting access to application logs while these logs are present within the PCF environment, via Cloud Controller logical access controls including RBAC roles, and the appropriate use of Orgs and Spaces by the deployer.
+Deployers that require immutability of the Linux OS audit log rules must create a BOSH Add-on release.
+The default configuration of the stemcell does not mark the Linux audit rules file as immutable because this would block the deployer from appending additional audit rules when deploying, e.g., a site-specific security agent.
+Once audit log data has been transferred to the enterprise log management system, the protection of archived audit log information from unauthorized access, modification, and deletion is the responsibility of the deployer.
 
 ##<a id='details'></a>Details
 
