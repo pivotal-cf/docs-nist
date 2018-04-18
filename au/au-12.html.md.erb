@@ -9,13 +9,20 @@ compliant+inherited
 
 ##<a id='details'></a>Details
 
-"When appropriately configured, PCF audits all platform activity.
+"The policy decision on what events to audit is a deployer responsibility. 
+However, all technical controls implied by this requirement are satisfied by the PCF platform. 
+When appropriately configured, the PCF platform audits all platform activity, and is compliant with this requirement.  
+It is the responsibility of the deployer to configure an appropriate syslog destination, and also to leverage appropriate encryption and logical access controls for all audit data that is archived off-platform to an enterprise log management system. 
+PCF platform and application logs are synchronized to an enterprise provided time standard, and thus may be correlated with logs from other information systems as needed.
+The logging format for Cloud Controller and UAA follows the de-facto standard CEF logging format.
 
-https://docs.pivotal.io/pivotalcf/1-11/opsguide/logging-config-opsman.html 
+Additional information on specific audit capabilities can be found on the following pages:
 
-https://docs.pivotal.io/pivotalcf/1-11/loggregator/cc-uaa-logging.html
+[Logging configuration](https://docs.pivotal.io/pivotalcf/opsguide/logging-config-opsman.html) 
 
-http://bosh.io/docs/director-access-events.html"
+[Cloud Controller and UAA logging](https://docs.pivotal.io/pivotalcf/loggregator/cc-uaa-logging.html)
+
+[BOSH director logging](http://bosh.io/docs/director-access-events.html)"
 
 <hr>
 
@@ -27,7 +34,7 @@ The information system:
   <li>Provides audit record generation capability for the auditable events defined in AU-2 a. at [Assignment: organization-defined information system components];</li>
   <li>Allows [Assignment: organization-defined personnel or roles] to select which auditable events are to be audited by specific components of the information system; and</li>
   <li>Generates audit records for the events defined in AU-2 d. with the content defined in AU-3.</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 

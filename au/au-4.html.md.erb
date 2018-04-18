@@ -5,12 +5,7 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-inherited
-
-##<a id='details'></a>Details
-
-deployer responsibility
-
+Provisioning adequate audit log storage capacity is the responsibility of the deployer and/or operator.  The PCF loggregator system will forward all platform and application logs to an operator configured enterprise log management system.  All audit logs are streamed off the platform as they are created, and forwarded to the syslog endpoint. Ops Manager and BOSH enable operators to adjust resource allocations for PCF VM capacity as needed. 
 <hr>
 
 ##<a id='description'></a>Control Description

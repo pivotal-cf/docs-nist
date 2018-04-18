@@ -5,11 +5,7 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-compliant
-
-##<a id='details'></a>Details
-
-PCF can use NTP.  BOSH uses NTP client in cron.
+PCF is compliant with this requirement.  The PCF deployment may be configured to use an NTP time server. All VM instances created by BOSH use an NTP client cron job to synchronize time across the machines in the deployment. The PCF deployment includes a "Clock Global" job and deployers may scale the number of instances as needed.  
 
 <hr>
 
