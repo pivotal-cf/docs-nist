@@ -5,12 +5,11 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-inherited
-
-##<a id='details'></a>Details
-
-deployer responsibility
-
+Policies and procedures governing change control practices within the organization are the responsibility of the deployer.
+Changes made to a PCF deployment via BOSH and/or Ops Manager will be reflected in the deployment manifest, the BOSH director database, and the BOSH eventlog.
+The BOSH eventlog may be forwarded to an enterprise log management system.
+BOSH deployment manifests may be maintained in a version control system.
+An operator may also perform a manual comparison across different deployment manifest versions.
 <hr>
 
 ##<a id='description'></a>Control Description
@@ -25,7 +24,7 @@ The organization:
   <li>Retains records of configuration-controlled changes to the information system for [Assignment: organization-defined time period];</li>
   <li>Audits and reviews activities associated with configuration-controlled changes to the information system; and</li>
   <li>Coordinates and provides oversight for configuration change control activities through [Assignment: organization-defined configuration change control element (e.g., committee, board)] that convenes [Selection (one or more): [Assignment: organization-defined frequency]; [Assignment: organization-defined configuration change conditions]].</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 

@@ -5,7 +5,12 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-inherited+compliant
+The technical configuration settings for a PCF deployment are managed by BOSH and Ops Manager.
+An operator may choose to place BOSH manifests under external version control.
+Similarly for applications that are deployed on the PCF platform.
+Application artifacts may be placed under version control as needed.
+Any required procedural controls that protect access to the versioned manifest artifacts are a deployer responsibility.
+All implied requirements are satisfied.
 
 ##<a id='details'></a>Details
 
@@ -22,7 +27,7 @@ The organization:
   <li>Implements the configuration settings;</li>
   <li>Identifies, documents, and approves any deviations from established configuration settings for [Assignment: organization-defined information system components] based on [Assignment: organization-defined operational requirements]; and</li>
   <li>Monitors and controls changes to the configuration settings in accordance with organizational policies and procedures.</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 
