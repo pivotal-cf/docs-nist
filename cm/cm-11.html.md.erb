@@ -5,11 +5,8 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-inherited
-
-##<a id='details'></a>Details
-
-deployer responsibility
+This requirement is a deployer responsibility.  All implied requirements are satisfied.  Developers with appropriate RBAC Cloud Controller roles assigned to their account may perform a `cf push` operation to 
+run application code on the foundation.  However, all application code is executed within a container environment and is not permitted access to the host VMs.
 
 <hr>
 
@@ -19,7 +16,7 @@ deployer responsibility
   <li>Establishes [Assignment: organization-defined policies] governing the installation of software by users;</li>
   <li>Enforces software installation policies through [Assignment: organization-defined methods]; and</li>
   <li>Monitors policy compliance at [Assignment: organization-defined frequency].</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 
