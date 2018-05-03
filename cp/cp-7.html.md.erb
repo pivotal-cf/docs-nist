@@ -5,7 +5,9 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+When deployed in accordance with the reference architecture, PCF is compliant with this requirement. If the infrastructure supports it, PAS can operate across multiple availability zones (AZs). Applications deployed to the platform inherit this redundancy across availability zones.
+
+Note that BOSH and Ops Manager are deployed to a single AZ, but any unplanned downtime of these management plane components does not impact application availability.
 
 <hr>
 
