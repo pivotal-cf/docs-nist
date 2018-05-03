@@ -5,9 +5,11 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-Compliance with this requirement is the responsibility of the PCF deployer.
+When deployed in accordance with the reference architecture, PCF is compliant with this requirement. If the infrastructure supports it, PAS can operate across multiple availability zones (AZs). Applications deployed to the platform inherit this redundancy across availability zones.
 
-A contingency plan can support an alternate storage site using the [BOSH Backup and Restore](https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html) tool to recover PCF deployments.
+PCF applications store their data by binding to data services, and whether these data are stored in multiple sites depends on how these services are configured.
+
+A contingency plan can support an alternate storage site for PCF using the [BOSH Backup and Restore](https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html) tool to recover PCF deployments.
 
 <hr>
 
