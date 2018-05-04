@@ -5,11 +5,11 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-When the PCF platform is deployed in accordance with the reference architecture guidance the platform is compliant.  System functions, ports, protocols, and/or services are exposed only as needed and appropriate for the platform operation.
+When the PCF platform is deployed in accordance with the reference architecture guidance the platform is compliant.  System functions, ports, protocols, and services are exposed only as needed and appropriate for the platform operation.
 In particular, the reference architecture requires that the CF Router provide the entry point to the deployment for users and operators.
 The other VMs that make up the PAS runtime environment are not routable from the enterprise network.
 There are no unnecessary functions, ports, protocols, or services exposed that are not strictly required.
-Deployers have the option of turning off access via SSH.
+Deployers have the option of turning off access through SSH.
 Deployers have the option of requiring TLS for access to public endpoints.
 The BOSH stemcell is hardend to remove unneeded functions, ports, protocols and services.
 The PCF configuration options include a number of feature flags that may be enabled at the deployer's discretion.
