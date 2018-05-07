@@ -5,7 +5,22 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-PCF is compliant with this requirement. The PCF deployer is responsible for integrity verification. PCF supports the use of third-party scanners, either through remote access scanning, or through local installation of third-party agents on the BOSH stemcells.
+PCF is compliant with this requirement. The PCF deployer is responsible for integrity verification.
+
+PCF supports the use of third-party scanners, either through remote access scanning, or through local installation of third-party agents on the BOSH stemcells. 
+
+The [File Integrity Monitoring](https://docs.pivotal.io/addon-fim/index.html) add-on for PCF monitors file integrity for all BOSH-deployed VMs. Deployers can also customize their BOSH Through the BOSH [runtime config](http://bosh.io/docs/runtime-config.html) to run audit daemon and other native Linux auditing tools on all BOSH-deployed VMs.
+
+[Pivotal Network](https://network.pivotal.io) provides checksums for all software releases, enabling deployers to check file integrity before deployment. 
+https://github.com/cloudfoundry/os-conf-release
+
+
+
+https://docs.pivotal.io/addon-antivirus/index.html
+
+
+Digital signatures on releases is a roadmap item."
+
 
 PCF deployers requiring assistance configuring integrity verification can contact the Pivotal Security team at [security@pivotal.io](mailto:security@pivotal.io).
 
