@@ -5,7 +5,11 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+The PCF product feature set is sufficient to satisfy the technical requirements implied in SI-16. Each instance of an app deployed to PCF runs within its own container, a self-contained environment. This container isolates processes, memory, and the filesystem using operating system features and the characteristics of the virtual and physical infrastructure where PCF is deployed.
+
+PCF stemcells follow industry-standard hardening guidance and maintain a secure posture by default. For example, PCF is preconfigured to randomize address space layout and restrict file system mount options such as `noexec` and `read-only`.
+
+For more information, see [Understanding Container Security](http://docs-pcf-staging.cfapps.io/pivotalcf/concepts/container-security.html).
 
 <hr>
 
