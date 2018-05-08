@@ -5,7 +5,13 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+Identifiers for components within the PCF deployment are managed by BOSH, and the underlying Cloud Provider Interface (CPI).
+With High Probabability, all identifiers are unique in a deployment, and not shared or reused.
+At the time of a new BOSH deployment, it is expected that, e.g. IP addresses in the CIDR range of the PAS private subnet may be reused.
+However, the BOSH director ensures that each IP address in the CIDE subnet will be uniquely assigned for a given deployment operation.
+Assignment of host identifiers is visible in audit logs of the BOSH director, PCF, and/or the CPI.
+
+Identfiers used by external entities such as end users or end user devies are the responsibility of the deployer.
 
 <hr>
 
@@ -19,7 +25,7 @@ The organization manages information system identifiers by:
   <li>Assigning the identifier to the intended individual, group, role, or device;</li>
   <li>Preventing reuse of identifiers for [Assignment: organization-defined time period]; and</li>
   <li>Disabling the identifier after [Assignment: organization-defined time period of inactivity].</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 
