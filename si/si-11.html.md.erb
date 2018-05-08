@@ -5,11 +5,11 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-PCF is compliant with this requirement. The PCF deployer is responsible for handling errors.
-
-Application code is the deployer's responsibility.  Authorization to see application logs is controlled by the Cloud Controller Organization and Space abstractions.  
+PCF is compliant with this requirement.
 
 Errors returned from PCF APIs and UIs contain enough information to determine the nature of the problem, but do not disclose inappropriate information such as passwords.  System logs that stream to a syslog endpoint are similarly designed to not avoid disclosing sensitive information to an unauthorized listener.
+
+Application code is the deployer's responsibility. Authorization to see application logs may be controlled by the Cloud Controller RBAC restrictions, which are scoped by Org and Space abstractions.
 
 The deployer may use a [nozzle](http://docs.pivotal.io/pivotalcf/loggregator/nozzle-tutorial.html) to direct log streams from the Firehose to secure drains. The deployer may also use authorization controls present in their third-party log management system to control access to archival logs.
 
