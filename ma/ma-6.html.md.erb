@@ -5,7 +5,12 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+Compliance with the requirements defined in this control are a deployer responsibility.
+
+The PCF platform provides the organization with a high availability environment, such that an unplanned maintenance event due to hardware or software failure should not result in any application down time.
+For example, when supported by the underlying IaaS, the PCF deployment may be operated across multiple availability zones, in order to protect against loss of a specific geographic location.
+In the event that spare parts are needed to restore service at a specific geographic location, the applications hosted on PCF should remain available via, e.g., another availability zone.
+
 
 <hr>
 

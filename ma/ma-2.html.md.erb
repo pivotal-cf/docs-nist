@@ -5,8 +5,10 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
-
+Regular maintenance of a PAS deployment is accomplished using BOSH and Ops Manager.
+Approval for maintenance activies and the associated record-keeping requirements are the respsonibility of the deployer.
+Handling procedures for proper custody or hardware will vary based on the IaaS, and are the responsibility of the deployer.
+Appropriate procedures for sanitization of persistent storage volumes are IaaS-specific, and will vary based on, e.g., whether the PAS deployment is part of a public or private cloud deployment.
 <hr>
 
 ##<a id='description'></a>Control Description
@@ -20,7 +22,7 @@ The organization:
   <li>Sanitizes equipment to remove all information from associated media prior to removal from organizational facilities for off-site maintenance or repairs;</li>
   <li>Checks all potentially impacted security controls to verify that the controls are still functioning properly following maintenance or repair actions; and</li>
   <li>Includes [Assignment: organization-defined maintenance-related information] in organizational maintenance records.</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 
