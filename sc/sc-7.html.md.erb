@@ -5,7 +5,7 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-The PCF PAS [reference architecture](https://docs.pivotal.io/pivotalcf/refarch/) documents provide the technical guidance deployers need in order to satisfy any boundary protection requirements.
+The PCF PAS [reference architecture](https://docs.pivotal.io/pivotalcf/refarch/index.html) documents provide the technical guidance deployers need in order to satisfy any boundary protection requirements.
 When deployed in accordance with the recommended reference architecture, the PCF PAS deployment is compliant with this requirement.  
 
 For more information on the system boundaries of PCF see: https://docs.pivotal.io/pivotalcf/concepts/security.html#system-boundaries
@@ -14,16 +14,16 @@ Beyond the boundary protections provided by the IaaS network architecture, addit
 
 a) Ingress to the platform is permitted only via the Cloud Foundry Router.  
 In addition, the Cloud Foundry Router provides [Route Services](https://docs.pivotal.io/pivotalcf/services/route-services.html) which can be used to do application-level traffic shaping.
-The PAS inherits any network isolation protections defined by the IaaS adinistrator.  
-In addition, [Isolation Segments](https://docs.pivotal.io/pivotalcf/adminguide/isolation-segments.html) can be used to seperate workloads and thereby limit east-west traffic.  
+The PAS inherits any network isolation protections defined by the IaaS administrator.  
+In addition, [Isolation Segments](https://docs.pivotal.io/pivotalcf/adminguide/isolation-segments.html) can be used to separate workloads and thereby limit east-west traffic.  
 
 b) Egress from the platform is controlled by the use of Application Security Groups (ASG).
-For more information on ASGs see: https://docs.pivotal.io/pivotalcf/concepts/asg.html
+For more information about ASGs, see [Understanding Application Security Groups](https://docs.pivotal.io/pivotalcf/concepts/asg.html).
 
 c) Intra-platform application traffic may be controlled via container-to-container networking policies.  These policies are default deny, with option for allowing connectivity between applications.
-For more information on C2C networking see: https://docs.pivotal.io/pivotalcf/1-12/concepts/understand-cf-networking.html
+For more information on C2C networking see [Understanding Container-to-Container Networking](https://docs.pivotal.io/pivotalcf/concepts/understand-cf-networking.html).
 
-The Cloud Foundry loggregator logging subsystem provides monitoring of all inbound and outbound network communcations. 
+The Cloud Foundry Loggregator logging subsystem provides monitoring of all inbound and outbound network communications. 
 
 The deployer is responsible for ensuring that all connections to external third-party systems are done in accordance with the organization's approved security architecture. 
 

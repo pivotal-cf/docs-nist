@@ -9,13 +9,13 @@ As per the recommended reference architecture, PCF PAS is deployed behind an org
 
 Native PCF PAS management API traffic, and any cloud native application traffic, both operate at level 7, over HTTP(S).
 
-HTTP is stateless and user sessions are based on HTTP session headers, and the use of OAuth2 tokens.
+HTTP is stateless and user sessions are based on HTTP session headers, and the use of OAuth 2 tokens.
 
-The OAuth2 token lifetimes issued by UAA for use with Apps Manager, the CF CLI, and any application SSO can be configured to tailor the user login sessions appropriately.
+The OAuth 2 token lifetimes issued by UAA for use with Apps Manager, the CF CLI, and any application SSO can be configured to tailor the user login sessions appropriately.
 
-For more information on HTTP routing and sessions in PCF PAS see:  https://docs.pivotal.io/pivotalcf/concepts/http-routing.html
+For more information about HTTP routing and sessions in PCF PAS see [HTTP Routing](https://docs.pivotal.io/pivotalcf/concepts/http-routing.html).
 
-For more information on customizing the Apps Manager and CF CLI token lifetime see: https://docs.pivotal.io/pivotalcf/customizing/cloudform-er-config.html#uaa
+For more information about customizing the Apps Manager and the cf CLI token lifetime see the [Configure UAA section](https://docs.pivotal.io/pivotalcf/1-12/customizing/cloudform-er-config.html#uaa) of [Deploying Elastic Runtime on AWS](https://docs.pivotal.io/pivotalcf/1-12/customizing/cloudform-er-config.html).
 
 <hr>
 
