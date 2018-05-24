@@ -5,7 +5,12 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+PCF is compliant with this control.  PCF supports the use of TLS for all externally accessible entry points.  OAuth2 tokens are used for maintenance of Cloud Controller API sessions, and also to implement SSO to application instances.   
+
+Internal to the deployment, PCF uses both TLS and IPsec.  For communications protected via IPsec, the IKEv2 protocol provides SA establishment.  Authentication of IPsec peers is via X.509 certificates.  
+
+Direct operator access to a PCF VM host or application container is protected with the SSH protocol.  SSH client authentication is implemented via a public/private key pair. 
+
 
 <hr>
 

@@ -5,7 +5,11 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+As described in the corresponding [reference architecture](https://docs.pivotal.io/pivotalcf/refarch/index.html) documentation, the PCF PAS deployment depends upon the presence of an IaaS firewall and load balancer infrastructure.  The PCF deployment will therefore inherit whatever DDOS protections are provided at the perimeter of the deployment.  
+
+Pivotal Cloud Foundry also supports the use of [Route Services](https://docs.cloudfoundry.org/services/route-services.html), which can be used to add additional application-level (layer 7) protection.
+
+In addition, PCF itself employs [rate limiting](https://docs.cloudfoundry.org/running/setting-rate-limit-cloud-api.html) techniques to protect against DOS attacks on, e.g. the Cloud Controller.
 
 <hr>
 

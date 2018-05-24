@@ -4,8 +4,18 @@ owner: Security
 ---
 
 ##<a id='compliance'></a>PCF Compliance
+A PCF PAS deployment is managed via the BOSH CLI and/or the Ops Manager UI. When deployed in compliance with Pivotal reference architecture, the PCF PAS is compliant with the requirements in this control.  
 
-##<a id='details'></a>Details
+Regular users accessing the applications on the platform cannot access the BOSH director or the Ops Manager interface, which are expected to be running on a separate (non-routable) network / vLAN.  
+
+In addition, the devops users of the platform may be given different RBAC roles in the Cloud Controller, to appropriately limit their authorization level, depending upon if they are a developer, auditor, manager, and so on.  
+
+Access control for applications is the responsibility of the application developer.
+
+
+More information is available about the PCF PAS [reference architecture](https://docs.pivotal.io/pivotalcf/refarch/index.html) for each supported IaaS platform.
+More information is available about the [RBAC controls](https://docs.pivotal.io/pivotalcf/1-12/concepts/roles.html) present in the Cloud Foundry Cloud Controller. 
+Additional information is also available on Cloud Foundry [security concepts]( https://docs.pivotal.io/pivotalcf/1-12/concepts/security.html).
 
 <hr>
 

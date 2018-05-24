@@ -5,7 +5,23 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+This control implies a requirement for secure domain name resolution, such as via the use of, e.g., DNSSEC, though no specific implementation choice is mandated.
+
+The interpretation of this control for PCF is that name resolution must be divided into two parts: external to PCF, and internal to PCF.
+
+For name resolution of any endpoints that are external to PCF, such as the UAA or Cloud Controller, the FQDN should be resolved using a trusted DNS service. 
+
+That trust in DNS may be based upon runtime integrity checking using approved cryptographic mechnanisms, such as via DNSSEC.  Alternatively, trust in the DNS name resolution service used by PCF clients may be based upon a combination of appropriately securing the DNS client endpoint configuration, and appropriately restricting access to the enterprise DNS name server itself.
+
+Regardless of the mechanism chosen, compliance with the requirement for name resolution external to the platform is a deployer responsibility.
+
+Internal to PCF, the platform jobs and services rely upon the BOSH director to manage VM configuration and name resolution is done through BOSH DNS. In earlier PAS releases Consul and/or etcd provided the equivalent service location capabilities.  
+
+For more information on BOSH DNS see:  https://bosh.io/docs/dns/
+
+Name resolution for applications deployed to PAS containers is configured via Diego.
+
+More information on how containers perform DNS lookups on a Diego Cell is available in this Pivotal [Knowledgebase article](https://discuss.pivotal.io/hc/en-us/articles/360001578654).
 
 <hr>
 
@@ -16,7 +32,7 @@ The information system:
 <ol type="a">
   <li>Provides additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries; and</li>
   <li>Provides the means to indicate the security status of child zones and (if the child supports secure resolution services) to enable verification of a chain of trust among parent and child domains, when operating as part of a distributed, hierarchical namespace.</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 

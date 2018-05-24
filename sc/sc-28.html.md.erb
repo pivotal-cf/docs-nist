@@ -5,7 +5,19 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+PCF is compatible with the use of IaaS-provided data-at-rest disk encryption when this capability is available.  It is an operator responsibility to appropriately configure the deployment.
+
+Integration of PCF and Ops Manager with a native IaaS-provided key management service may vary by IaaS.  
+
+Operators can specify a custom AWS Key Management Service (KMS) encryption key to encrypt all the Elastic Block Store (EBS) volumes in AWS for BOSH VMs and the Ops Manager VM.
+
+For more information on PCF integration with IaaS disk encryption capabilities see: 
+
+* https://docs.pivotal.io/pivotalcf/customizing/cloudform-om-ebs-config.html
+* https://docs.pivotal.io/pivotalcf/installing/highlights.html#custom-kms
+* https://docs.pivotal.io/pivotalcf/installing/highlights.html#blobstore-encryption
+
+In addition, PCF also encrypts sensitive information in the Cloud Controller database explicitly.  Key material for this protection is auto-generated uniquely for each deployment.
 
 <hr>
 
