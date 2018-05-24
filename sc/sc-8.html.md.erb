@@ -5,7 +5,21 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-##<a id='details'></a>Details
+When deployed in accordance with the associate reference architecture, PCF PAS provides both confidentiality and integrity of transmitted information.  All implied requirements are satisfied. 
+
+Network traffic to any PCF publically accessible endpoint is protected via TLS, and optionally via SSH.
+
+Network traffic within the PCF PAS private subnet may be protected using the IPsec BOSH Add-on.
+
+For more information on IPsec see: https://docs.pivotal.io/addon-ipsec/index.html
+
+For an overview of securing traffic into PCF see: https://docs.pivotal.io/pivotalcf/adminguide/securing-traffic.html
+
+For more information on TLS in PCF see: https://docs.pivotal.io/pivotalcf/security/networking/tls-info.html
+
+For more information on SSH in PCF see: https://docs.pivotal.io/pivotalcf/devguide/deploy-apps/app-ssh-overview.html and https://docs.pivotal.io/pivotalcf/opsguide/config-ssh.html
+
+For more information on SSH with BOSH see:  https://bosh.io/docs/jumpbox/
 
 <hr>
 
