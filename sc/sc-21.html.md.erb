@@ -9,7 +9,7 @@ Address resolution for clients that need to reach endpoints at the external inte
 
 Address resolution internal to the PCF foundation is managed by BOSH DNS.  As BOSH is responsible for assigning IP addresses for PCF platform jobs (BOSH releases), it also orchestrates name resolution for these addresses.  Security of this name-to-address resolution is based on the trust relationship between the BOSH director and the BOSH agents. Address resolution for applications running within the PAS/ERT runtime container is delegated to the DNS specified by the operator, using the Ops Manager, or the IaaS supplied DNS.  
 
-See also the information provided for the related control SC-20.
+See also the information provided for the related control [SC-20](./sc-20.html).
 
 For more information on name resolution from containers, see [BOSH DNS Introduced Container DNS Behavior Changes in PAS 2.0](https://discuss.pivotal.io/hc/en-us/articles/360001578654) in the Pivotal Knowledge Base.
 

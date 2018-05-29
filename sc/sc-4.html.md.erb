@@ -11,7 +11,7 @@ These linux containers are designed to provide isolation between application pro
 
 In particular, the container filesystem is created using an overlay FS, ensuring that disk writes from one application cannot be seen by another concurrent or future application executing on the same host.  
 
-In addtion, the containers are run on BOSH managed VMs which are themselves relatively short-lived. These VMs are created with both ephemeral and persistent disks, and all transient application data is stored on ephemeral disks, which are not preserved when a VM is recreated.
+In addition, the containers are run on BOSH managed VMs which are themselves relatively short-lived. These VMs are created with both ephemeral and persistent disks, and all transient application data is stored on ephemeral disks, which are not preserved when a VM is recreated.
 
 More information on how BOSH manages disk storage may be found in the [BOSH documentation](https://bosh.io/docs/vm-config.html#storage).
 
