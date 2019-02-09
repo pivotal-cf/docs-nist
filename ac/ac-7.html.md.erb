@@ -3,6 +3,8 @@ title: AC-7 UNSUCCESSFUL LOGON ATTEMPTS
 owner: Security
 ---
 
+<strong><%= modified_date %></strong>
+
 ##<a id='compliance'></a>PCF Compliance
 
 In PCF, the UAA component delegates these responsibilities to the enterprise identity manangement system (IdM). Lockout of users following too many failed authentication attempts is inherited from the enterprise IdM. In the case of BOSH SSH, users must have previously authenticated via UAA, and the SSH login uses a BOSH-managed private key.
