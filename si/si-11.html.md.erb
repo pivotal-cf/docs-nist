@@ -13,7 +13,7 @@ Errors returned from PCF APIs and UIs contain enough information to determine th
 
 Application code is the deployer's responsibility. Authorization to see application logs may be controlled by the Cloud Controller RBAC restrictions, which are scoped by Org and Space abstractions.
 
-The deployer may use a [nozzle](https://docs.pivotal.io/pivotalcf/loggregator/nozzle-tutorial.html) to direct log streams from the Firehose to secure drains. The deployer may also use authorization controls present in their third-party log management system to control access to archival logs.
+The deployer may use a [nozzle](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/nozzle-tutorial.html) to direct log streams from the Firehose to secure drains. The deployer may also use authorization controls present in their third-party log management system to control access to archival logs.
 
 The BOSH Director, Ops Manager, and other PCF system components also stream component logs via syslog. Deployers may restrict these logs to specific personnel based on their source.
 
@@ -26,7 +26,7 @@ The information system:
 <ol type="a">
   <li>Generates error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries; and</li>
   <li>Reveals error messages only to [Assignment: organization-defined personnel or roles].</li>
-</ol>					 
+</ol>
 
 ##<a id='supplemental'></a>Supplemental Guidance
 

@@ -7,20 +7,20 @@ owner: Security
 
 ##<a id='compliance'></a>PCF Compliance
 
-The policy decision on what events to audit is a deployer responsibility. 
-However, all technical controls implied by this requirement are satisfied by the PCF platform. 
+The policy decision on what events to audit is a deployer responsibility.
+However, all technical controls implied by this requirement are satisfied by the PCF platform.
 
-When appropriately configured, the PCF platform audits all platform activity, and is compliant with this requirement.  
-It is the responsibility of the deployer to configure an appropriate syslog destination, and also to leverage appropriate encryption and logical access controls for all audit data that is archived off-platform to an enterprise log management system. 
+When appropriately configured, the PCF platform audits all platform activity, and is compliant with this requirement.
+It is the responsibility of the deployer to configure an appropriate syslog destination, and also to leverage appropriate encryption and logical access controls for all audit data that is archived off-platform to an enterprise log management system.
 
 PCF platform and application logs are synchronized to an enterprise provided time standard, and thus may be correlated with logs from other information systems as needed.
 The logging format for Cloud Controller and UAA follows the de-facto standard CEF logging format.
 
 Additional information on specific audit capabilities can be found on the following pages:
 
-* [Logging Configuration](https://docs.pivotal.io/pivotalcf/opsguide/logging-config-opsman.html) 
+* [Logging Configuration](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/logging-config-opsman.html)
 
-* [Cloud Controller and UAA Logging](https://docs.pivotal.io/pivotalcf/loggregator/cc-uaa-logging.html)
+* [Cloud Controller and UAA Logging](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/cc-uaa-logging.html)
 
 * [BOSH Director Logging](https://bosh.io/docs/director-access-events.html)"
 
