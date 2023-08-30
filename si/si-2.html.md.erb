@@ -5,25 +5,25 @@ owner: Security
 
 <strong><%= modified_date %></strong>
 
-##<a id='compliance'></a>PCF Compliance
+##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-PCF is compliant with this requirement. Pivotal regularly publishes security updates for Pivotal Cloud Foundry on [Pivotal Network](https://network.pivotal.io). Operators may subscribe to update notifications from [Pivotal Network](https://network.pivotal.io) and use BOSH and Ops Manager to keep their deployments up-to-date.
+VMware Tanzu Application Service (VMware TAS for VMs) is compliant with this requirement. VMware regularly publishes security updates for VMware TAS for VMs on [VMware Tanzu Network](https://network.pivotal.io). Operators may subscribe to update notifications from [VMware Tanzu Network](https://network.pivotal.io) and use BOSH and Ops Manager to keep their deployments up-to-date.
 
-When an operator applies a patch, PCF systematically rolls the update out to all VMs in a deployment, avoiding the need to patch individual VMs.
+When an operator applies a patch, VMware TAS for VMs systematically rolls the update out to all VMs in a deployment, avoiding the need to patch individual VMs.
 
 Pivotal provides the following incident response support resources:
 
 * RSS feed of Pivotal vulnerability reports: [https://pivotal.io/security/rss](https://pivotal.io/security/rss)
 
-* Pivotal Product Vulnerability Reports, archived on the [Pivotal Application Security Team website](https://tanzu.vmware.com/security)
+* Pivotal Product Vulnerability Reports, archived on the [VMware Tanzu Application Security Team website](https://tanzu.vmware.com/security)
 
-See [Security Processes and Stemcells](https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/security-index.html) in the PCF documentation for more information.
+See [Security Processes and Stemcells](https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/security-index.html) in the VMware TAS for VMs documentation for more information.
 
-The PCF deployer is responsible for performing scans for both configuration and vulnerabilities. PCF supports the use of third-party scanners, either through remote access scanning, or through local installation of third-party agents on the BOSH stemcells.
+The VMware TAS for VMs deployer is responsible for performing scans for both configuration and vulnerabilities. VMware TAS for VMs supports the use of third-party scanners, either through remote access scanning, or through local installation of third-party agents on the BOSH stemcells.
 
-PCF deployers performing configuration scans against a PCF deployment should adjust their scanning benchmark to perform a cloud-native assessment, as opposed to employing a scanning benchmark intended for standalone Linux server deployments.
+VMware TAS for VMs deployers performing configuration scans against a VMware TAS for VMs deployment should adjust their scanning benchmark to perform a cloud-native assessment, as opposed to employing a scanning benchmark intended for standalone Linux server deployments.
 
-PCF deployers requiring assistance with scanning a deployment can contact the Pivotal Security team at [security@pivotal.io](mailto:security@pivotal.io).
+VMware TAS for VMs deployers requiring assistance with scanning a deployment can contact the Pivotal Security team at [security@pivotal.io](mailto:security@pivotal.io).
 
 <hr>
 

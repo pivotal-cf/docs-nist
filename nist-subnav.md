@@ -1,6 +1,6 @@
-# Assessment of Pivotal Cloud Foundry against NIST SP 800-53(r4) Controls Documentation Index
+# Assessment of VMware Tanzu Application Service against NIST SP 800-53(r4) Controls Documentation Index
 
-This is the table of contents from which the Assessment of Pivotal Cloud Foundry against NIST SP 800-53(r4) Controls site on docs.vmware.com is built.
+This is the table of contents from which the Assessment of VMware Tanzu Application Service against NIST SP 800-53(r4) Controls site on docs.vmware.com is built.
 
 -   [NIST Controls and PCF](/nist/index.html.md.erb)
 -   [AC - Access Control](/nist/ac/index.html.md.erb)
