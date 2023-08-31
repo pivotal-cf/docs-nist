@@ -5,19 +5,19 @@ owner: Security
 
 <strong><%= modified_date %></strong>
 
-##<a id='compliance'></a>PCF Compliance
+##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-PCF PAS is compliant with all the technical controls stated or implied in this requirement.
+VMware Tanzu Application Service (TAS for VMs) is compliant with all the technical controls stated or implied in this requirement.
 
-For all but one function, PCF allows the deployer to supply enterprise-issued or enterprise-provisioned certificates.  For the specific case of the "non-configurable" Ops Manager certificates, the deployer may not use their own CA but may rotate the internally generated certificates via an API.
+For all but one function, TAS for VMs allows the deployer to supply enterprise-issued or enterprise-provisioned certificates.  For the specific case of the "non-configurable" Tanzu Operations Manager certificates, the deployer may not use their own CA but may rotate the internally generated certificates via an API.
 
-For more information on Ops Manager certificate rotation see: https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/security-pcf-infrastructure-api-cert-rotation.html
+For more information on Tanzu Operations Manager certificate rotation see: https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/security-pcf-infrastructure-api-cert-rotation.html
 
 For more information on configuring certificates for TLS termination at the CF router see:  https://docs.pivotal.io/pivotalcf/customizing/config-er-vmware.html#networking
 
-Certificates used by the IPsec BOSH Add-on are supplied by the deployer.  For more information on IPsec certificate management see: https://docs.vmware.com/en/IPsec-for-VMware-Tanzu/1.9/documentation/GUID-credentials.html 
+Certificates used by the IPsec BOSH Add-on are supplied by the deployer.  For more information on IPsec certificate management see: https://docs.vmware.com/en/IPsec-for-VMware-Tanzu/1.9/documentation/GUID-credentials.html
 
-Beginning with release version 2.0, PCF uses CredHub to manage all platform credentials. For more information on CredHub see:
+Beginning with release version 2.0, TAS for VMs uses CredHub to manage all platform credentials. For more information on CredHub see:
 
 * [Open Source CredHub documentation](https://docs.cloudfoundry.org/credhub/index.html)
 * [Pivotal CredHub documentation](https://docs.pivotal.io/pivotalcf/credhub/index.html)

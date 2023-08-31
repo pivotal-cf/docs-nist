@@ -1,7 +1,7 @@
 VMware Tanzu Application Service NIST
 ========
 
-This repository contains source files for the https://docs.pivotal.io/nist documentation set.
+This repository contains source files for the https://docs.vmware.com/en/VMware-Tanzu-Application-Service/services/nist/index.htmlhttps://docs.vmware.com/en/VMware-Tanzu-Application-Service/services/nist/index.html documentation set.
 
 The VMware Tanzu Application Service (VMware TAs for VMs) NIST topics provide an assessment of TAS for VMs
 against the NIST SP 800-53(r4) controls, and provides guidance for how

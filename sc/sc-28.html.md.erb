@@ -5,15 +5,15 @@ owner: Security
 
 <strong><%= modified_date %></strong>
 
-##<a id='compliance'></a>PCF Compliance
+##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
 PCF is compatible with the use of IaaS-provided data-at-rest disk encryption when this capability is available.  It is an operator responsibility to appropriately configure the deployment.
 
-Integration of PCF and Ops Manager with a native IaaS-provided key management service may vary by IaaS.  
+Integration of PCF and Tanzu Operations Manager with a native IaaS-provided key management service may vary by IaaS.
 
-Operators can specify a custom AWS Key Management Service (KMS) encryption key to encrypt all the Elastic Block Store (EBS) volumes in AWS for BOSH VMs and the Ops Manager VM.
+Operators can specify a custom AWS Key Management Service (KMS) encryption key to encrypt all the Elastic Block Store (EBS) volumes in AWS for BOSH VMs and the Tanzu Operations Manager VM.
 
-For more information about PCF integration with IaaS disk encryption capabilities see: 
+For more information about PCF integration with IaaS disk encryption capabilities see:
 
 * https://docs.pivotal.io/pivotalcf/customizing/cloudform-om-ebs-config.html
 * https://docs.pivotal.io/pivotalcf/installing/highlights.html#custom-kms

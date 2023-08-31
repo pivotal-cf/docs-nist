@@ -5,19 +5,19 @@ owner: Security
 
 <strong><%= modified_date %></strong>
 
-##<a id='compliance'></a>PCF Compliance
+##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-End User authenticator management is the responsibility of the deployer.  
-Intra-platform authenticator management is the responsibility of BOSH and Ops Man and CredHub. 
-Rotating intra-system authenticators in PAS is a supported procedure.  
-It is not yet fully automated, but may be accomplished through manual intervention. 
+End User authenticator management is the responsibility of the deployer.
+Intra-platform authenticator management is the responsibility of BOSH and Ops Man and CredHub.
+Rotating intra-system authenticators in PAS is a supported procedure.
+It is not yet fully automated, but may be accomplished through manual intervention.
 
 it is a deployer responsibility to align organizational policy and operational procedures to supplement native PCF capabilities if and as needed.
 
-Validation of end user PKI credentials is delegated to the enterprise IdM.  
-Validation of intra-platform PKI credentials uses the deployer-configured CA trust chain. 
-However, there is no OCSP or CRL checking for intra-platform PKI credentials.  
-The strategy for avoiding reliance on a compromised credential is based upon based upon frequent rotation of short lived credentials. 
+Validation of end user PKI credentials is delegated to the enterprise IdM.
+Validation of intra-platform PKI credentials uses the deployer-configured CA trust chain.
+However, there is no OCSP or CRL checking for intra-platform PKI credentials.
+The strategy for avoiding reliance on a compromised credential is based upon based upon frequent rotation of short lived credentials.
 
 <hr>
 

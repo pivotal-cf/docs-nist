@@ -5,10 +5,10 @@ owner: Security
 
 <strong><%= modified_date %></strong>
 
-##<a id='compliance'></a>PCF Compliance
-A PCF PAS deployment is managed via the BOSH CLI and/or the Ops Manager UI. When deployed in compliance with Pivotal reference architecture, the PCF PAS is compliant with the requirements in this control.
+##<a id='compliance'></a>VMware Tanzu Application Service Compliance
+A PCF PAS deployment is managed via the BOSH CLI and/or the Tanzu Operations Manager UI. When deployed in compliance with VMware Tanzu Application Service reference architecture, the PCF PAS is compliant with the requirements in this control.
 
-Regular users accessing the applications on the platform cannot access the BOSH director or the Ops Manager interface, which are expected to be running on a separate (non-routable) network / vLAN.
+Regular users accessing the applications on the platform cannot access the BOSH director or the Tanzu Operations Manager interface, which are expected to be running on a separate (non-routable) network / vLAN.
 
 In addition, the DevOps users of the platform may be given different RBAC roles in the Cloud Controller, to appropriately limit their authorization level, depending upon if they are a developer, auditor, manager, and so on.
 

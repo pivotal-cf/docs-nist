@@ -5,13 +5,13 @@ owner: Security
 
 <strong><%= modified_date %></strong>
 
-##<a id='compliance'></a>PCF Compliance
+##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-PCF PAS runs applications inside [linux containers](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/container-security.html). 
+PCF PAS runs applications inside [linux containers](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/container-security.html).
 
-These linux containers are designed to provide isolation between application processes, including filesystem, network, memory, and CPU. 
+These linux containers are designed to provide isolation between application processes, including filesystem, network, memory, and CPU.
 
-In particular, the container filesystem is created using an overlay FS, ensuring that disk writes from one application cannot be seen by another concurrent or future application executing on the same host.  
+In particular, the container filesystem is created using an overlay FS, ensuring that disk writes from one application cannot be seen by another concurrent or future application executing on the same host.
 
 In addition, the containers are run on BOSH managed VMs which are themselves relatively short-lived. These VMs are created with both ephemeral and persistent disks, and all transient application data is stored on ephemeral disks, which are not preserved when a VM is recreated.
 

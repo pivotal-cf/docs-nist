@@ -5,15 +5,15 @@ owner: Security
 
 <strong><%= modified_date %></strong>
 
-##<a id='compliance'></a>PCF Compliance
+##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-Physical access restrictions are the responsibility of the deployer.  PCF provides logical access controls for operators using BOSH and Ops Manager performing change management functions on the platform.  
-For example, authentication to BOSH and Ops Manager may be controlled using integration of UAA and the existing enterprise- or agency-deployed Identity Management system. BOSH and Ops Manager must be deployed 
+Physical access restrictions are the responsibility of the deployer.  PCF provides logical access controls for operators using BOSH and VMware Tanzu Operations Manager performing change management functions on the platform.
+For example, authentication to BOSH and Tanzu Operations Manager may be controlled using integration of UAA and the existing enterprise- or agency-deployed Identity Management system. BOSH and Tanzu Operations Manager must be deployed
 on a restricted management subnet, and access controlled through a bastion host (Jumpbox) as described in the reference architecture.
-As of PCF v2.1, Ops Manager users with Full View and Restricted View permissions can be logged in simultaneously.
-Prior to this release, only one user at a time could view Ops Manager.
-For security purposes, operators with write access still cannot be logged into Ops Manager simultaneously.
-Additional procedural controls to ensure only one Ops Manager user with write access at any one time is a deployer responsibility.
+As of PCF v2.1, Tanzu Operations Manager users with Full View and Restricted View permissions can be logged in simultaneously.
+Prior to this release, only one user at a time could view Tanzu Operations Manager.
+For security purposes, operators with write access still cannot be logged into Tanzu Operations Manager simultaneously.
+Additional procedural controls to ensure only one Tanzu Operations Manager user with write access at any one time is a deployer responsibility.
 
 Logical access controls to protect change management of deployed applications are provided by the RBAC capabilities of the Cloud Controller.
 Refer to the associated documentation pages for more information about Cloud Controller RBAC.

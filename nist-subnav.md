@@ -2,7 +2,7 @@
 
 This is the table of contents from which the Assessment of VMware Tanzu Application Service against NIST SP 800-53(r4) Controls site on docs.vmware.com is built.
 
--   [NIST Controls and PCF](/nist/index.html.md.erb)
+-   [NIST Controls and VMware Tanzu Application Service](/nist/index.html.md.erb)
 -   [AC - Access Control](/nist/ac/index.html.md.erb)
     -   [AC-1 ACCESS CONTROL POLICY AND PROCEDURES](/nist/ac/ac-1.html.md.erb)
     -   [AC-2 ACCOUNT MANAGEMENT](/nist/ac/ac-2.html.md.erb)

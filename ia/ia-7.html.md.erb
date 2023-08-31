@@ -5,9 +5,9 @@ owner: Security
 
 <strong><%= modified_date %></strong>
 
-##<a id='compliance'></a>PCF Compliance
+##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-Not all cryptographic modules present in a PCF deployment are FIPS compliant.   
+Not all cryptographic modules present in a PCF deployment are FIPS compliant.
 The cryptographic modules deployed for IPsec communication (OpenSSL, C language) are built and deployed to operate in FIPS mode.
 However, the cryptographic modules used in UAA (Java), the CF router, and Diego (Golang), as well as the OpenSSL package used for host-based SSH (C language), are not currently FIPS compliant.
 
