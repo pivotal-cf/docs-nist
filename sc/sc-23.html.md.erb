@@ -7,9 +7,9 @@ owner: Security
 
 ##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-Tanzu Application Service (TAS for VMs) is compliant with this control. TAS for VMs supports the use of TLS for all externally accessible entry points.  OAuth 2 tokens are used for maintenance of Cloud Controller API sessions, and also to implement SSO to application instances.
+Tanzu Application Service (TAS for VMs) is compliant with this control. TAS for VMs supports the use of TLS for all externally accessible entry points. OAuth 2 tokens are used for maintenance of Cloud Controller API sessions, and also to implement SSO to application instances.
 
-Internal to the deployment, TAS for VMs uses both TLS and IPsec. For communications protected via IPsec, the IKEv2 protocol provides SA establishment.  Authentication of IPsec peers is via X.509 certificates.
+Internal to the deployment, TAS for VMs uses both TLS and IPsec. For communications protected via IPsec, the IKEv2 protocol provides SA establishment. Authentication of IPsec peers is via X.509 certificates.
 
 Direct operator access to a TAS for VMs VM host or application container is protected with the SSH protocol. SSH client authentication is implemented via a public/private key pair.
 
