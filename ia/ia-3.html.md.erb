@@ -10,7 +10,7 @@ owner: Security
 The VMs that are created in a Tanzu Application Service (TAS for VMs) deployment are created by BOSH on existing IAAS infrastructure, on a designated private subnet.
 All devices "admitted" to this subnet are determined by the authorized BOSH operator. e.g. there is no provision for an externally managed
 device to obtain an address on the private subnet via, e.g. DHCP and EAP.  In addition, the controlled distribution of IPsec credentials
-prevents any externally managed VMs from communicating on the PAS private subnet.
+prevents any externally managed VMs from communicating on the Tanzu Application Service private subnet.
 Admittance of end user client devices to a network that is routable to TAS for VMs is the responsibility of the deployer.
 
 <hr>

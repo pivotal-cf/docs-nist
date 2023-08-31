@@ -10,20 +10,20 @@ owner: Security
 The Tanzu Application Service (TAS for VMs) [reference architecture](https://docs.pivotal.io/pivotalcf/refarch/index.html) documents provide the technical guidance deployers need in order to satisfy any boundary protection requirements.
 When deployed in accordance with the recommended reference architecture, the TAS for VMs deployment is compliant with this requirement.
 
-For more information on the system boundaries of TAS for VMs see: https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/security.html#system-boundaries
+For more information on the system boundaries of TAS for VMs see: https://docs.vmware.com/en/VMware-Tanzu-Application-Service/4.0/tas-for-vms/security.html#system-boundaries
 
-Beyond the boundary protections provided by the IaaS network architecture, additional PAS flow control is provided using the following mechanisms:
+Beyond the boundary protections provided by the IaaS network architecture, additional Tanzu Application Service (TAS for VMs) flow control is provided using the following mechanisms:
 
-a) Ingress to the platform is permitted only via the Cloud Foundry Router.
-In addition, the Cloud Foundry Router provides [Route Services](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/route-services.html) which can be used to do application-level traffic shaping.
-The PAS inherits any network isolation protections defined by the IaaS administrator.
-In addition, [Isolation Segments](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/isolation-segments.html) can be used to separate workloads and thereby limit east-west traffic.
+a) Ingress to the platform is permitted only via the Cloud Foundry Router Services.
+In addition, [route services](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/4.0/tas-for-vms/route-services.html) can be used to do application-level traffic shaping.
+The TAS for VMs inherits any network isolation protections defined by the IaaS administrator.
+In addition, [Isolation Segments](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/4.0/tas-for-vms/isolation-segments.html) can be used to separate workloads and thereby limit east-west traffic.
 
 b) Egress from the platform is controlled by the use of Application Security Groups (ASG).
-For more information about ASGs, see [Understanding Application Security Groups](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/asg.html).
+For more information about ASGs, see [Understanding Application Security Groups](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/4.0/tas-for-vms/asg.html).
 
 c) Intra-platform application traffic may be controlled via container-to-container networking policies.  These policies are default deny, with option for allowing connectivity between applications.
-For more information on C2C networking see [Container-to-Container Networking](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/3.0/tas-for-vms/understand-cf-networking.html).
+For more information on C2C networking see [Container-to-Container Networking](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/4.0/tas-for-vms/understand-cf-networking.html).
 
 The Cloud Foundry Loggregator logging subsystem provides monitoring of all inbound and outbound network communications.
 

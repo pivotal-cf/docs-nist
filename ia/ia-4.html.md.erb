@@ -9,7 +9,7 @@ owner: Security
 
 Identifiers for components within the Tanzu Application Service (TAS for VMs) deployment are managed by BOSH, and the underlying Cloud Provider Interface (CPI).
 With High Probability, all identifiers are unique in a deployment, and not shared or reused.
-At the time of a new BOSH deployment, it is expected that, e.g. IP addresses in the CIDR range of the PAS private subnet may be reused.
+At the time of a new BOSH deployment, it is expected that, e.g. IP addresses in the CIDR range of the Tanzu Application Service private subnet may be reused.
 However, the BOSH director ensures that each IP address in the CIDE subnet will be uniquely assigned for a given deployment operation.
 Assignment of host identifiers is visible in audit logs of the BOSH director, TAS for VMs, and/or the CPI.
 

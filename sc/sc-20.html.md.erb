@@ -17,13 +17,11 @@ That trust in DNS may be based upon runtime integrity checking using approved cr
 
 Regardless of the mechanism chosen, compliance with the requirement for name resolution external to the platform is a deployer responsibility.
 
-Internal to TAS for VMs, the platform jobs and services rely upon the BOSH director to manage VM configuration and name resolution is done through BOSH DNS. In earlier PAS releases Consul and/or etcd provided the equivalent service location capabilities.
+Internal to TAS for VMs, the platform jobs and services rely upon the BOSH director to manage VM configuration and name resolution is done through BOSH DNS. In earlier Tanzu Application Service (TAS for VMs) releases Consul and/or etcd provided the equivalent service location capabilities.
 
-For more information about BOSH DNS see:  https://bosh.io/docs/dns/
+For more information about BOSH DNS see: https://bosh.io/docs/dns/
 
-Name resolution for applications deployed to PAS containers is configured via Diego.
-
-For more information about how containers perform DNS lookups on a Diego Cell, see [BOSH DNS Introduced Container DNS Behavior Changes in PAS 2.0](https://community.pivotal.io/s/article/BOSH-DNS-Introduced-Container-DNS-Behavior-Changes-in-PAS-20) in the Pivotal Knowledge Base.
+Name resolution for applications deployed to TAS for VMs containers is configured via Diego.
 
 <hr>
 
