@@ -9,15 +9,15 @@ owner: Security
 
 This control implies a requirement for secure domain name resolution, such as via the use of, e.g., DNSSEC, though no specific implementation choice is mandated.
 
-The interpretation of this control for PCF is that name resolution must be divided into two parts: external to PCF, and internal to PCF.
+The interpretation of this control for Tanzu Application Service (TAS for VMs) is that name resolution must be divided into two parts: external to TAS for VMs, and internal to TAS for VMs.
 
-For name resolution of any endpoints that are external to PCF, such as the UAA or Cloud Controller, the FQDN should be resolved using a trusted DNS service.
+For name resolution of any endpoints that are external to TAS for VMs, such as the UAA or Cloud Controller, the FQDN should be resolved using a trusted DNS service.
 
-That trust in DNS may be based upon runtime integrity checking using approved cryptographic mechanisms, such as via DNSSEC.  Alternatively, trust in the DNS name resolution service used by PCF clients may be based upon a combination of appropriately securing the DNS client endpoint configuration, and appropriately restricting access to the enterprise DNS name server itself.
+That trust in DNS may be based upon runtime integrity checking using approved cryptographic mechanisms, such as via DNSSEC.  Alternatively, trust in the DNS name resolution service used by TAS for VMs clients may be based upon a combination of appropriately securing the DNS client endpoint configuration, and appropriately restricting access to the enterprise DNS name server itself.
 
 Regardless of the mechanism chosen, compliance with the requirement for name resolution external to the platform is a deployer responsibility.
 
-Internal to PCF, the platform jobs and services rely upon the BOSH director to manage VM configuration and name resolution is done through BOSH DNS. In earlier PAS releases Consul and/or etcd provided the equivalent service location capabilities.
+Internal to TAS for VMs, the platform jobs and services rely upon the BOSH director to manage VM configuration and name resolution is done through BOSH DNS. In earlier PAS releases Consul and/or etcd provided the equivalent service location capabilities.
 
 For more information about BOSH DNS see:  https://bosh.io/docs/dns/
 

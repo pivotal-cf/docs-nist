@@ -7,9 +7,9 @@ owner: Security
 
 ##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-Address resolution for clients that need to reach endpoints at the external interface of PCF (such as applications hosted in PCF, or the UAA or Cloud Controller endpoint) are the responsibility of the deployer. The client will rely upon the DNS configuration of the endpoint device.
+Address resolution for clients that need to reach endpoints at the external interface of Tanzu Application Service (TAS for VMs) (such as applications hosted in TAS for VMs, or the UAA or Cloud Controller endpoint) are the responsibility of the deployer. The client will rely upon the DNS configuration of the endpoint device.
 
-Address resolution internal to the PCF foundation is managed by BOSH DNS. As BOSH is responsible for assigning IP addresses for PCF platform jobs (BOSH releases), it also orchestrates name resolution for these addresses. Security of this name-to-address resolution is based on the trust relationship between the BOSH director and the BOSH agents. Address resolution for applications running within the PAS/ERT runtime container is delegated to the DNS specified by the operator, using the Tanzu Operations Manager, or the IaaS supplied DNS.
+Address resolution internal to the TAS for VMs foundation is managed by BOSH DNS. As BOSH is responsible for assigning IP addresses for TAS for VMs platform jobs (BOSH releases), it also orchestrates name resolution for these addresses. Security of this name-to-address resolution is based on the trust relationship between the BOSH director and the BOSH agents. Address resolution for applications running within the PAS/ERT runtime container is delegated to the DNS specified by the operator, using the Tanzu Operations Manager, or the IaaS supplied DNS.
 
 See also the information provided for the related control [SC-20](./sc-20.html).
 
