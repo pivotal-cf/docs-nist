@@ -8,12 +8,12 @@ owner: Security
 ##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
 The policy decision on what events to audit is a deployer responsibility.
-However, all technical controls implied by this requirement are satisfied by the PCF platform.
+However, all technical controls implied by this requirement are satisfied by the Tanzu Application Service (TAS for VMs) platform.
 
-When appropriately configured, the PCF platform audits all platform activity, and is compliant with this requirement.
+When appropriately configured, the TAS for VMs platform audits all platform activity, and is compliant with this requirement.
 It is the responsibility of the deployer to configure an appropriate syslog destination, and also to leverage appropriate encryption and logical access controls for all audit data that is archived off-platform to an enterprise log management system.
 
-PCF platform and application logs are synchronized to an enterprise provided time standard, and thus may be correlated with logs from other information systems as needed.
+TAS for VMs platform and application logs are synchronized to an enterprise provided time standard, and thus may be correlated with logs from other information systems as needed.
 The logging format for Cloud Controller and UAA follows the de-facto standard CEF logging format.
 
 Additional information on specific audit capabilities can be found on the following pages:

@@ -7,11 +7,11 @@ owner: Security
 
 ##<a id='compliance'></a>VMware Tanzu Application Service Compliance
 
-When deployed in accordance with the recommended reference architecture the PCF platform is compliant with this requirement.
-The entry point to access any services in the PCF platform are the Cloud Controller (for developers) and the BOSH director and/or Tanzu Operations Manager (for operators).
+When deployed in accordance with the recommended reference architecture the Tanzu Application Service (TAS for VMs) platform is compliant with this requirement.
+The entry point to access any services in the TAS for VMs platform are the Cloud Controller (for developers) and the BOSH director and/or Tanzu Operations Manager (for operators).
 Both of these end points require authentication at UAA before any further action may be taken.
 The UAA may be configured to delegate the initial user authentication requirement to an enterprise IdM, including LDAP and/or SAML authentication.
-When multi-factor authentication is required, a deployer may configure the IdM system to require multifactor authentication prior to the issuance of a SAML assertion,
+When multi-factor authentication is required, a deployer may configure the IdM system to require multi-factor authentication prior to the issuance of a SAML assertion,
 which would then be presented at the UAA.  Support for PIV or CAC authentication is delegated to the enterprise IdM.
 
 Developers and operators are only required to authenticate once to access their respective service end points.  Note, however, that any single
