@@ -13,3 +13,10 @@ organization.
 This document covers VMware TAS for VMs, and assumes the use of BOSH
 and VMware Tanzu Operations Manager. In addition, we assume the platform has been deployed in a
 manner consistent with the corresponding IaaS reference architecture.
+
+There is only one branch of the [docs-nist repo](https://github.com/pivotal-cf/docs-nist). This is the `master` branch.
+
+The docs can be reviewed here:
+
+* Staging: https://docs-staging.vmware.com/en/VMware-Tanzu-Application-Service/services/nist/index.html
+* Production: https://docs.vmware.com/en/VMware-Tanzu-Application-Service/services/nist/index.html
